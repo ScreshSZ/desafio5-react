@@ -23,7 +23,8 @@ const Home = () => {
   return (
     <>
       <div className='contenedorCards'>
-        {datosApi.map((personajes) => <MultiActionAreaCard
+        {datosApi.map((personajes, index) => <MultiActionAreaCard
+          key={index}
           image={personajes.image}
           name={personajes.name}
           gender={personajes.gender} 
